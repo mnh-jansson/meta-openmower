@@ -41,3 +41,9 @@ do_configure_append() {
 }
 
 inherit ros_catkin
+
+do_install_append() {
+    install -d ${D}${includedir}
+    install -d ${D}${includedir}/vesc_driver
+    install -m 0644 ${S}/include/vesc_driver/*.h ${D}${includedir}/vesc_driver
+}

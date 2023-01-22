@@ -15,6 +15,7 @@ DEPENDS = " \
     std-msgs \
     geometry-msgs \
     message-generation \
+    catkin-native \
 "
 
 RDEPENDS:${PN} = " \
