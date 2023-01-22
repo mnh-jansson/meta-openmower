@@ -20,6 +20,7 @@ DEPENDS = " \
     xesc-msgs \
     xesc-interface \
     xbot-msgs \
+    catkin-native \
 "
 
 RDEPENDS:${PN} = " \
