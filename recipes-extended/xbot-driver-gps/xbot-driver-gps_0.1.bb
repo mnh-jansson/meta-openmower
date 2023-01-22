@@ -1,7 +1,7 @@
 inherit ros_distro_noetic
 
 DESCRIPTION = "Metapackage for xbot_driver_gps"
-AUTHOR = "Martin Jansson <mati.jansson@gmail.com>"
+AUTHOR = "Martin Jansson"
 ROS_AUTHOR = "Clemens Elflein"
 HOMEPAGE = "https://github.com/ClemensElflein/xbot_driver_gps"
 SECTION = "devel"

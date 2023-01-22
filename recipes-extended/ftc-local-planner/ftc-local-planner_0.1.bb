@@ -1,7 +1,7 @@
 inherit ros_distro_noetic
 
 DESCRIPTION = "Metapackage for ftc_local_planner"
-AUTHOR = "Martin Jansson <mati.jansson@gmail.com>"
+AUTHOR = "Martin Jansson"
 ROS_AUTHOR = "Clemens Elflein"
 HOMEPAGE = "https://github.com/ClemensElflein/ftc_local_planner"
 SECTION = "devel"
