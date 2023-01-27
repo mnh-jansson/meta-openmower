@@ -1,0 +1,21 @@
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 91007b0..5f82603 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -79,7 +79,7 @@ install(TARGETS ftc_local_planner
+        LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+        )
+        
+-install(FILES blp_plugin.xml
++install(FILES mbf_plugin.xml
+     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+ )
+ 
+-- 
+2.25.1
+
