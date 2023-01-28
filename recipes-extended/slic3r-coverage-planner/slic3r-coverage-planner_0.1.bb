@@ -36,13 +36,11 @@ RDEPENDS:${PN} += " \
     costmap-2d \
 "
 
-SRC_URI = " \
-    git://github.com/ClemensElflein/slic3r_coverage_planner.git;protocol=https;branch=main \
-"
+SRC_URI = "git://github.com/ClemensElflein/slic3r_coverage_planner.git;protocol=https;branch=main \
+    file://0001-remove-external-project.patch \
+    file://0002-plain-link.patch \
+    "
 SRCREV = "1039dd0e3db4e9559e76969fe222f015e249aaba"
 S = "${WORKDIR}/git"
 
 inherit ros_catkin
-
-
-

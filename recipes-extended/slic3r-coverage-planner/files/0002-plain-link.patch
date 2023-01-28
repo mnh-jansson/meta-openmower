@@ -1,0 +1,37 @@
+
+---
+ CMakeLists.txt | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index fc53c24..557ad9b 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -219,15 +219,15 @@ add_executable(slic3r_coverage_planner
+ add_dependencies(slic3r_coverage_planner ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
+ 
+ target_link_libraries(slic3r_coverage_planner ${catkin_LIBRARIES}
+-        ${BINARY_DIR}/liblibslic3r.a
+-        ${BINARY_DIR}/libadmesh.a
+-        ${BINARY_DIR}/libBSpline.a
+-        ${BINARY_DIR}/libexpat.a
+-        ${BINARY_DIR}/libminiz.a
+-        ${BINARY_DIR}/libpoly2tri.a
+-        ${BINARY_DIR}/libpolypartition.a
+-        ${BINARY_DIR}/libZipArchive.a
+-        ${BINARY_DIR}/libclipper.a
++        -llibslic3r
++        -ladmesh
++        -lBSpline
++        -lexpat
++        -lminiz
++        -lpoly2tri
++        -lpolypartition
++        -lZipArchive
++        -lclipper
+         ${Boost_LIBRARIES}
+         )
+ 
+-- 
+2.25.1
+
