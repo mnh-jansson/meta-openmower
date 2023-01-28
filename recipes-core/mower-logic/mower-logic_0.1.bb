@@ -27,6 +27,7 @@ DEPENDS = " \
     robot-localization \
     xbot-msgs \
     xbot-positioning \
+    catkin-native \
 "
 
 RDEPENDS:${PN} += " \
