@@ -17,7 +17,7 @@ revision: HEAD
 ## Usage
 
 * Make a workspace directory and clone all the necessary layers.
-<pre><code>
+```
 mkdir yocto
 cd yocto
 git clone --depth 1 git://git.yoctoproject.org/poky -b dunfell
@@ -27,9 +27,9 @@ git clone --depth 1 https://github.com/ros/meta-ros.git -b dunfell
 git clone --depth 1 https://github.com/mnh-jansson/meta-openmower.git -b dunfell
 
 source oe-init-build-env
-</code></pre>
+```
 * Add the required layers to `conf/bblayers.conf`
-<pre><code>
+```
 BBLAYERS ?= " \
     ${TOPDIR}/../meta \
     ${TOPDIR}/../meta-poky \
@@ -44,13 +44,12 @@ BBLAYERS ?= " \
     ${TOPDIR}/../meta-openembedded/meta-networking \
     ${TOPDIR}/../meta-openmower \
 "
-</code></pre>
+```
 * Set `conf/local.conf` according to your target.
 * Build image with:
-<pre><code>
+```
 bitbake core-image-openmower
-</code></pre>
-
+```
 
 ## Contributing
 
